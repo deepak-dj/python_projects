@@ -1,7 +1,13 @@
 import time
 print('------------------------------------------------------')
-print('============== WELCOME TO MY CALCI ==================')
+print('============== WELCOME TO MY CALCI ===================')
 print('------------------------------------------------------')
+
+time.sleep(3)
+print()
+print('here you can perform mathmatical operations like addition,substraction,multiplication and division')
+print()
+time.sleep(3)
 
 
 class calci():
