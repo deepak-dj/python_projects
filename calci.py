@@ -3,6 +3,12 @@ print('------------------------------------------------------')
 print('============== WELCOME TO MY CALCI ==================')
 print('------------------------------------------------------')
 
+time.sleep(3)
+print()
+print('here you can perform mathmatical operations like "+","-","*","/"')
+print()
+time.sleep(3)
+
 
 class calci():
     def __init__(self,num1,num2) -> None:
