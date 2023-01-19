@@ -3,11 +3,11 @@ print('------------------------------------------------------')
 print('============== WELCOME TO MY CALCI ===================')
 print('------------------------------------------------------')
 
-time.sleep(3)
+time.sleep(2)
 print()
 print('here you can perform mathmatical operations like addition,substraction,multiplication and division')
 print()
-time.sleep(3)
+time.sleep(2)
 
 
 class calci():
@@ -22,7 +22,8 @@ class calci():
     def multiply(self):
         return (self.num1*self.num2)
     def divide(self):
-        return (self.num1/self.num2)  
+        return (self.num1/self.num2) 
+     
 
 class Overloading():
         def __init__(self,num) -> None:
@@ -39,8 +40,8 @@ class Overloading():
 
 
 while True:
-    num1 = int(input('enter 1st number : '))
-    num2 = int(input('enter 2nd number : '))
+    num1 = float(input('enter 1st number : '))
+    num2 = float(input('enter 2nd number : '))
     operation = input('select operation\n+\n-\n*\n/\n------\n')
     c = calci(num1,num2)
     if operation == '+':
@@ -54,7 +55,7 @@ while True:
     else:
         print('plz choose the valid operation') 
     print()      
-    print(f'the output is {int(new_num)}')  
+    print(f'the output is {float(new_num)}')  
 
     print()
     choice = input('type "y" if you want to continue with the reasultant value or for new inputs press "n", To close the claculator press x\n--------\n').lower()
@@ -66,7 +67,7 @@ while True:
         break 
     while choice != 'n':
             c1 = Overloading(new_num)
-            c2 = Overloading(int(input('enter 2nd number : ')))
+            c2 = Overloading(float(input('enter 2nd number : ')))
             ops = input('select operation\n+\n-\n*\n/\n------\n')
             if ops == '+':
                 new_num = c1+c2
@@ -78,14 +79,10 @@ while True:
                 new_num = c1/c2
             else:
                 print('plz choose the valid operation')
+                break
             print()    
-            print(f'the output is {int(new_num)}')    
+            print(f'the output is {float(new_num)}')    
             print()  
             options = input('want to continue type "c" and want a fresh start press "s"\n------\n').lower()    
             if options != 'c':
                 break
-            
-    
-
-
-           
